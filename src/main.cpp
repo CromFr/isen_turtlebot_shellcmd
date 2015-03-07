@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 
   ros::NodeHandle n;
 
-  ros::Subscriber sub = n.subscribe("itb_shellcmd_topic", 1000, chatterCallback);
+  ros::Subscriber sub = n.subscribe("itb_shellcmd_topic", 1000, rcv);
   ros::spin();
 
   return 0;
